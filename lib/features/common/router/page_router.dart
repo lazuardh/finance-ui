@@ -14,10 +14,21 @@ class PageRouter {
           settings: settings,
           builder: (arguments) => const SignInPage(),
         );
+
+      //------------------------------------------------------
+
+      /* Bottom Nav */
+      //-------------------------------------------------------
+      case PagePath.bottomNav:
+        return _buildRouter(
+          settings: settings,
+          builder: (arguments) => const BottomNav(),
+        );
+      //------------------------------------------------------
+
       default:
         return null;
     }
-    //------------------------------------------------------
   }
 
   Route<dynamic> _buildRouter({

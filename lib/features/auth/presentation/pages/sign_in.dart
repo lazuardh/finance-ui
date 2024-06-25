@@ -16,7 +16,6 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.secondary,
       body: SafeArea(
         minimum: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -51,7 +50,10 @@ class _SignInPageState extends State<SignInPage> {
               "Sign In",
               width: double.infinity,
               borderRadius: AppBorderRadius.medium,
-              onPressed: () {},
+              onPressed: () => Navigator.pushReplacementNamed(
+                context,
+                PagePath.bottomNav,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

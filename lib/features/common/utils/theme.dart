@@ -12,7 +12,7 @@ class Finance {
     final theme = Theme.of(context);
     return theme.copyWith(
       primaryColor: AppColors.secondary,
-      scaffoldBackgroundColor: AppColors.white,
+      scaffoldBackgroundColor: AppColors.secondary,
       shadowColor: AppColors.primary,
       disabledColor: AppColors.grey,
       // textSelectionTheme: theme.textSelectionTheme.copyWith(
@@ -24,13 +24,12 @@ class Finance {
         primary: AppColors.primary,
         secondary: AppColors.secondary,
         error: AppColors.red,
-        background: AppColors.green,
       ),
       iconTheme: theme.iconTheme.copyWith(
         color: AppColors.black,
       ),
       floatingActionButtonTheme: theme.floatingActionButtonTheme.copyWith(
-        backgroundColor: AppColors.secondary,
+        backgroundColor: AppColors.buttonColor,
       ),
       appBarTheme: theme.appBarTheme.copyWith(
         backgroundColor: AppColors.white,
