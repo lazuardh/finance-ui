@@ -15,8 +15,8 @@ class AppColors {
 }
 
 class TextFieldColors {
-  // static const Color backgroundEnable = AppColors.greyPrimary;
-  // static const Color backgroundDisable = AppColors.greyLighter;
+  static const Color backgroundEnable = AppColors.secondary;
+  static const Color backgroundDisable = AppColors.secondary;
   static const Color text = AppColors.secondary;
   // static const Color hint = AppColors.greyPrimary;
   // static const Color label = AppColors.blackLighter;

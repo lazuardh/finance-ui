@@ -29,8 +29,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.6
+  currency_text_input_formatter: ^2.2.3
+  email_validator: ^3.0.0
   flutter:
     sdk: flutter
+  form_validator: ^2.1.1
   google_fonts: ^6.2.1
   icon_badge: ^1.0.0
 

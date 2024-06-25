@@ -14,16 +14,17 @@ class Finance {
       primaryColor: AppColors.secondary,
       scaffoldBackgroundColor: AppColors.white,
       shadowColor: AppColors.primary,
-      disabledColor: AppColors.primary,
+      disabledColor: AppColors.grey,
       // textSelectionTheme: theme.textSelectionTheme.copyWith(
       //   cursorColor: Blue.primary,
       //   selectionHandleColor: Blue.primary,
       //   selectionColor: Blue.quaternary,
       // ),
       colorScheme: theme.colorScheme.copyWith(
-        primary: AppColors.secondary,
+        primary: AppColors.primary,
         secondary: AppColors.secondary,
-        error: AppColors.secondary,
+        error: AppColors.red,
+        background: AppColors.green,
       ),
       iconTheme: theme.iconTheme.copyWith(
         color: AppColors.black,
@@ -83,38 +84,38 @@ class Finance {
             color: TextFieldColors.enabledBorder,
           ),
         ),
-        enabledBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(AppBorderRadius.small / 2),
-          ),
-          borderSide: BorderSide(
-            color: TextFieldColors.enabledBorder,
-          ),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(AppBorderRadius.small / 2),
-          ),
-          borderSide: BorderSide(
-            color: TextFieldColors.focusedBorder,
-          ),
-        ),
-        focusedErrorBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(AppBorderRadius.small / 2),
-          ),
-          borderSide: BorderSide(
-            color: TextFieldColors.errorBorder,
-          ),
-        ),
-        errorBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(AppBorderRadius.small / 2),
-          ),
-          borderSide: BorderSide(
-            color: TextFieldColors.errorBorder,
-          ),
-        ),
+        // enabledBorder: const OutlineInputBorder(
+        //   borderRadius: BorderRadius.all(
+        //     Radius.circular(AppBorderRadius.small / 2),
+        //   ),
+        //   borderSide: BorderSide(
+        //     color: TextFieldColors.enabledBorder,
+        //   ),
+        // ),
+        // focusedBorder: const OutlineInputBorder(
+        //   borderRadius: BorderRadius.all(
+        //     Radius.circular(AppBorderRadius.small / 2),
+        //   ),
+        //   borderSide: BorderSide(
+        //     color: TextFieldColors.focusedBorder,
+        //   ),
+        // ),
+        // focusedErrorBorder: const OutlineInputBorder(
+        //   borderRadius: BorderRadius.all(
+        //     Radius.circular(AppBorderRadius.small / 2),
+        //   ),
+        //   borderSide: BorderSide(
+        //     color: TextFieldColors.errorBorder,
+        //   ),
+        // ),
+        // errorBorder: const OutlineInputBorder(
+        //   borderRadius: BorderRadius.all(
+        //     Radius.circular(AppBorderRadius.small / 2),
+        //   ),
+        //   borderSide: BorderSide(
+        //     color: TextFieldColors.errorBorder,
+        //   ),
+        // ),
       ),
       splashColor: (kIsWeb || Platform.isAndroid)
           ? AppColors.black.withOpacity(0.1)
@@ -123,7 +124,7 @@ class Finance {
           ? Colors.transparent
           : AppColors.black.withOpacity(0.1),
       textTheme: theme.textTheme.copyWith().apply(
-            fontFamily: GoogleFonts.alatsi().fontFamily,
+            fontFamily: GoogleFonts.poppins().fontFamily,
           ),
     );
   }
