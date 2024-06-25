@@ -20,7 +20,7 @@ class TextFieldColors {
   static const Color text = AppColors.secondary;
   // static const Color hint = AppColors.greyPrimary;
   // static const Color label = AppColors.blackLighter;
-  // static const Color errorBorder = AppColors.purplePrime;
+  static const Color errorBorder = AppColors.red;
   static const Color enabledBorder = AppColors.white;
   static const Color focusedBorder = AppColors.white;
 }
