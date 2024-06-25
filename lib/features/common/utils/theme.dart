@@ -11,7 +11,7 @@ class Finance {
   ThemeData of(BuildContext context) {
     final theme = Theme.of(context);
     return theme.copyWith(
-      primaryColor: AppColors.secondary,
+      primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.secondary,
       shadowColor: AppColors.primary,
       disabledColor: AppColors.grey,

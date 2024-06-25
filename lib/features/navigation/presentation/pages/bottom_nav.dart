@@ -1,4 +1,5 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:finance_ui/features/home/presentation/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import '../../../../lib.dart';
 
@@ -28,17 +29,25 @@ class _BottomNavState extends State<BottomNav> with TickerProviderStateMixin {
       resizeToAvoidBottomInset: true,
       onWillPop: () {},
       isBottomNavBar: true,
-      backgroundColor: AppColors.white,
+      backgroundColor: AppColors.secondary,
       bottomNavigationBar: _bottomNavigation(context),
+      floatingActionButton: SafeArea(
+          child: FloatingActionButton(
+        onPressed: () {},
+        shape: const CircleBorder(eccentricity: 0.0, side: BorderSide.none),
+        child: const Icon(
+          Icons.add,
+          size: 28,
+        ),
+      )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       child: Column(
         children: [
           Expanded(
             child: IndexedStack(
               index: _activedIndex,
               children: [
-                const Center(
-                  child: Text("data"),
-                ),
+                HomeScreen(),
                 const Center(
                   child: Text("data"),
                 ),
@@ -53,21 +62,12 @@ class _BottomNavState extends State<BottomNav> with TickerProviderStateMixin {
           )
         ],
       ),
-      floatingActionButton: SafeArea(
-          child: FloatingActionButton(
-        onPressed: () {},
-        shape: const CircleBorder(eccentricity: 0.0, side: BorderSide.none),
-        child: const Icon(
-          Icons.add,
-          size: 28,
-        ),
-      )),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 
   Widget _bottomNavigation(BuildContext ctx) {
     return AnimatedBottomNavigationBar(
+      backgroundColor: AppColors.secondary,
       icons: _bottomNavList.map((e) => e.icon).toList(),
       activeIndex: _activedIndex,
       splashColor: AppColors.secondary,

@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class BottomNavigationEntity {
   final IconData icon;
@@ -17,7 +16,7 @@ class BottomNavigationEntity {
     ),
     BottomNavigationEntity(
       icon: CupertinoIcons.creditcard,
-      label: "Credit Card",
+      label: "Transaction",
     ),
     BottomNavigationEntity(
       icon: CupertinoIcons.money_dollar,
