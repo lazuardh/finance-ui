@@ -34,3 +34,28 @@ class TransactionModel {
     ),
   ];
 }
+
+enum RecentTransactionType { all, income, expanses }
+
+class RecentTransactionModel {
+  final RecentTransactionType type;
+  final String title;
+  final String description;
+  final String amount;
+
+  RecentTransactionModel({
+    required this.type,
+    required this.title,
+    required this.description,
+    required this.amount,
+  });
+
+  static List<RecentTransactionModel> getRecentTransactionList = [
+    RecentTransactionModel(
+      type: RecentTransactionType.all,
+      title: "Payment",
+      description: "Payment from Andrea",
+      amount: "\$30.00",
+    ),
+  ];
+}

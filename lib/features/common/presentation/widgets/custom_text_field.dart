@@ -240,7 +240,8 @@ class _CustomTextFormFieldAuthState extends State<CustomTextFormFieldAuth> {
           width: double.infinity,
           height: 65,
           decoration: BoxDecoration(
-            color: const Color.fromRGBO(243, 244, 246, 1),
+            // color: const Color.fromRGBO(243, 244, 246, 1),
+            color: AppColors.white,
             borderRadius: BorderRadius.circular(12),
           ),
         ),

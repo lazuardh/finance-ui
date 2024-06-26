@@ -29,7 +29,7 @@ class _BottomNavState extends State<BottomNav> with TickerProviderStateMixin {
       resizeToAvoidBottomInset: true,
       onWillPop: () {},
       isBottomNavBar: true,
-      backgroundColor: AppColors.secondary,
+      backgroundColor: AppColors.primary,
       bottomNavigationBar: _bottomNavigation(context),
       floatingActionButton: SafeArea(
           child: FloatingActionButton(
@@ -48,9 +48,7 @@ class _BottomNavState extends State<BottomNav> with TickerProviderStateMixin {
               index: _activedIndex,
               children: [
                 HomeScreen(),
-                const Center(
-                  child: Text("data"),
-                ),
+                TransactionScreen(),
                 const Center(
                   child: Text("data"),
                 ),
@@ -67,7 +65,7 @@ class _BottomNavState extends State<BottomNav> with TickerProviderStateMixin {
 
   Widget _bottomNavigation(BuildContext ctx) {
     return AnimatedBottomNavigationBar(
-      backgroundColor: AppColors.secondary,
+      backgroundColor: AppColors.primary,
       icons: _bottomNavList.map((e) => e.icon).toList(),
       activeIndex: _activedIndex,
       splashColor: AppColors.secondary,

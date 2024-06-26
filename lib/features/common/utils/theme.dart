@@ -12,7 +12,7 @@ class Finance {
     final theme = Theme.of(context);
     return theme.copyWith(
       primaryColor: AppColors.primary,
-      scaffoldBackgroundColor: AppColors.secondary,
+      scaffoldBackgroundColor: AppColors.primary,
       shadowColor: AppColors.primary,
       disabledColor: AppColors.grey,
       // textSelectionTheme: theme.textSelectionTheme.copyWith(

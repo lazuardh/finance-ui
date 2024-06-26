@@ -1,2 +1,2 @@
 export 'financial_status_item_entity.dart';
-export 'transaction_model.dart';
+export '../../../common/data/entities/transaction_model.dart';
